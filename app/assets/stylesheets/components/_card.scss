@@ -1,0 +1,13 @@
+.card{
+  margin: 10px;
+}
+
+a {
+  color: black;
+  font-weight: bolder;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

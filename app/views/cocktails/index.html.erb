@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>All Cocktails</h1>
+
+  <div class="cards-container d-flex  justify-content-between flex-wrap">
+    <% @cocktails.each do |cocktail| %>
+    <div class="row">
+      <div class="col-sm" style="padding: 0 0">
+        <div class="card">
+        <img class='card-img-top' style="width: 270px; height:340px"src=<%=cocktail.image_url%>>
+        <div class="card-body">
+          <!-- <a href="#" class="stretched-link">Go somewhere</a> -->
+          <h5 class="card-text"><%= link_to cocktail.name, cocktail_path(cocktail)%></h5>
+        </div>
+      </div>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
+

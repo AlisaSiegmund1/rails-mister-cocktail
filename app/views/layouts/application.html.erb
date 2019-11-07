@@ -11,6 +11,12 @@
   </head>
 
   <body>
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <button type="button" class="btn btn-outline-secondary"><i class="fas fa-cocktail"></i> <%= link_to "Home", cocktails_path%></button>
+      <button type="button" class="btn btn-outline-secondary"><%= link_to 'Create new Cocktail', new_cocktail_path %></button>
+    </li>
+  </ul>
     <%= yield %>
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->

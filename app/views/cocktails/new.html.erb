@@ -1,0 +1,12 @@
+<div class="container">
+  <div style="text-align: left">
+    <h1>Create new Cocktail</h1>
+    <div style="width: 500px">
+      <%= simple_form_for (@cocktail) do |f| %>
+        <%= f.input :name %>
+        <%= f.input :image_url %>
+        <%= f.submit "add cocktail", class: "btn btn-outline-secondary" %>
+      <% end %>
+    </div>
+  </div>
+</div>

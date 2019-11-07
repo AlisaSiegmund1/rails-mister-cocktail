@@ -1,2 +1,11 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.container {
+  text-align: center;
+}
+
+.cards-container{
+  display: flex;
+  justify-content: space-evenly;
+}
