@@ -23,6 +23,16 @@ class CocktailsController < ApplicationController
     end
   end
 
+  def edit
+    set_cocktail
+  end
+
+  def update
+    set_cocktail
+    @cocktail.update(cocktail_params)
+    redirect_to cocktail_path(@cocktail)
+  end
+
   private
 
   def set_cocktail
@@ -30,6 +40,6 @@ class CocktailsController < ApplicationController
   end
 
   def cocktail_params
-    params.require('cocktail').permit(:name, :image_url)
+    params.require('cocktail').permit(:name, :description, :image_url)
   end
 end
